@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.EAbay1995/jebe-kaspi",
+  "title": "Jebe: Kaspi.kz seller assistant",
+  "description": "Kaspi.kz seller assistant: catalog, orders, waybills to PDF, price proposals the owner approves.",
+  "repository": {
+    "url": "https://github.com/EAbay1995/jebe-kaspi-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://jebe.kz/kaspi-mcp",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.jebe.kz/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <access token>. Create it in the Jebe cabinet (jebe.kz): Ваш ИИ, Создать адрес подключения. The token is the part of the address after /s/. It expires in 1-7 days and can be revoked.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
