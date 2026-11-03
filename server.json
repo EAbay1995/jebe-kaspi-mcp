@@ -8,19 +8,11 @@
     "source": "github"
   },
   "websiteUrl": "https://jebe.kz/kaspi-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.jebe.kz/mcp",
-      "headers": [
-        {
-          "name": "Authorization",
-          "description": "Bearer <access token>. Create it in the Jebe cabinet (jebe.kz): Ваш ИИ, Создать адрес подключения. The token is the part of the address after /s/. It expires in 1-7 days and can be revoked.",
-          "isRequired": true,
-          "isSecret": true
-        }
-      ]
+      "url": "https://mcp.jebe.kz"
     }
   ]
 }
